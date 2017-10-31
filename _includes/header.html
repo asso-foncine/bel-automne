@@ -2,21 +2,21 @@
 {% assign no_pagin_pages =  site.pages 
     | where: "nav-link", "true" 
     | where_exp: "item", "item.layout != 'posts'" %}
-{% assign pagin_pages = site.pages
-    | where: "nav-link", "true"  
+{% assign post_pages = site.pages 
+    | where: "nav-link", "true" 
     | where_exp: "item", "item.layout == 'posts'" 
-    | where_exp: "item", "item.title == item.pagination-helper" 
-    | reverse %}
+    | where_exp: "item", "item.url == '/posts/'" 
+%} 
 {% assign pages = no_pagin_pages 
-    | concat: pagin_pages
+    | concat: post_pages
     | sort: "index" %} 
 
 {% assign url = page.url | remove: "/index.html" | remove_first: "/" | split: '/' %}
 {% assign link = "/" | append: url.first | append: "/" %}
-{% if link == "/posts/" %}
-    {% assign link = link | append: "index.html" %}
-{% endif %}
-{% assign parents = site.pages | where: "permalink", link %}
+
+{% assign parents = site.pages 
+    | where: "url", link 
+%}
 {% assign parent = parents.first %}
 {% if parent %}
     {% assign icon = parent.icon %}
@@ -119,12 +119,16 @@
 </header>
 
 <div class="debug">
-    <div>
-        {% assign all_pages = site.pages | map: "url" %}
-        all_pages = {{ all_pages | join: "<br/>" }}
+    <div style="display: block">
+        {% assign all_pages = site.pages | map: "url" %} all_pages = {{ all_pages | join: "
+        <br/>" }}
     </div>
-    <div>
-        no_pagin_pages = {{no_pagin_pages | Inspect}}
+    <div style="display: none">
+        {% assign post_pages = site.pages 
+            | where: "nav-link", "true" 
+            | where_exp: "item", "item.layout == 'posts'" 
+            | where_exp: "item", "item.url == '/posts/'" 
+            %} 
+        post_pages = {{ post_pages | join: "<br/>" }}
     </div>
-
 </div>

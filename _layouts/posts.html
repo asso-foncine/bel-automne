@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="container">
+
     {% if content != "" %}
     <!--div class="row">
         <div class="col s12">
@@ -55,20 +56,23 @@ layout: default
                         <i class="material-icons">chevron_left</i>
                     </a>
                 </li>
-                {% if paginator.page_trail %}
-                {% for trail in paginator.page_trail %}
-                {% if page.url == trail.path %}
-                    {% assign trail_class = "active"  %}
-                {% else %}
-                    {% assign trail_class = "waves-effect" %}
-                {% endif %}
-                <li class={{trail_class}}>
-                    <a href={{ trail.path | prepend: site.baseurl }} title={{trail.title}}>
-                        {{ trail.num }}
+                {% for idx in (1..paginator.total_pages) %}
+                    {% assign url = "/posts/page-" | append: idx %}
+                    {% if idx == paginator.page %}
+                        {% assign class = "active" %}
+                    {% else %}
+                        {% assign class = "waves-effect" %}
+                    {% endif %}
+                    {% if idx == 1 %}
+                        {% assign url = "/posts/" %}
+                    {% endif %}
+                
+                <li class={{ class }}>
+                    <a href={{ url | relative_url }}>
+                        {{ idx }}
                     </a>
                 </li>
                 {% endfor %}
-                {% endif %}
                 <li class={{ next_style }}>
                     <a href={{ paginator.next_page_path | relative_url }}>
                         <i class="material-icons">chevron_right</i>

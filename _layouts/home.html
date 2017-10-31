@@ -6,7 +6,7 @@ layout: default
     | where_exp: "item", "item.layout != 'posts'" %}
 {% assign pagin_pages = site.pages 
     | where_exp: "item", "item.layout == 'posts'" 
-    | where_exp: "item", "item.title == item.pagination-helper" 
+    | where_exp: "item", "item.url == '/posts/'" 
     | reverse %}
 {% assign cards = no_pagin_pages 
     | concat: pagin_pages
@@ -56,7 +56,7 @@ layout: default
     {% for card in cards %}
     <div class="fixed-height-card {{ cards_col }} hoverable">
       <div class="index-card">
-        <a href={{ card.permalink | relative_url }}>
+        <a href={{ card.url | relative_url }}>
           <i class="material-icons medium deep-orange-text">{{ card.icon }}</i>
         </a>
         <p class="index-card-title">{{ card.title }}</p>
