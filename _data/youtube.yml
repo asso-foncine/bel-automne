@@ -1,0 +1,14 @@
+
+enabled: true
+title: Les vidéos
+href: /albums/video
+href-title: Voir la galerie
+desc: |
+  Ici la gallerie vidéo de la chaine youtube
+  Voir le fichier _data/youtube.yml
+thumb: youtube.jpg
+channel-title: "Aller sur Youtube"
+channel-href: "#"
+videos:
+  - id: V6Zo68uQPqE
+  - id: La3SaI2hjzE

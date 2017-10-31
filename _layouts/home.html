@@ -1,0 +1,76 @@
+--- 
+layout: default 
+--- 
+{% assign no_pagin_pages =  site.pages 
+    | where: "home-link", "true" 
+    | where_exp: "item", "item.layout != 'posts'" %}
+{% assign pagin_pages = site.pages 
+    | where_exp: "item", "item.layout == 'posts'" 
+    | where_exp: "item", "item.title == item.pagination-helper" 
+    | reverse %}
+{% assign cards = no_pagin_pages 
+    | concat: pagin_pages
+    | sort: "index" %} 
+{% assign cards_size = cards | size %} 
+{% if cards_size > 5 %}
+  {% assign cards_col = "col s12 m6 offset-m0 l3 offset-l0" %} 
+{% elsif cards_size > 4 %} 
+  {% assign cards_col = "col s12 m6 offset-m0 l3 offset-l0" %} 
+{% elsif cards_size > 3 %}
+  {% assign cards_col = "col s12 m6 offset-m0 l3 offset-l0" %} 
+{% elsif cards_size > 2 %}
+  {% assign cards_col = "col s12 m6 offset-m0 l3 offset-l0" %} 
+{% else %}
+  {% assign cards_col = "col s12" %} 
+{% endif %}
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="{{ "/assets/img/home/parallax-1.jpg" | relative_url }}">
+  </div>
+</div>
+
+<div class="section blue-grey lighten-5">
+  <div class="row container">
+    <div class="col s12">
+      <h2 class="header center-align home-title">{{ page.page-title }}</h2>
+    </div>
+    <div class="col s12">
+      <div class="card horizontal">
+        <div class="card-image valign-wrapper">
+          <img src="{{ "/assets/img/home/card.jpg" | relative_url }}">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content md-content">
+            {{ content }}
+          </div>
+          <div class="card-action bottom">
+            <h6>
+              {{page.contact-message}}
+            </h6>
+            <a class="center-align" href="#">{{ site.email }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    {% for card in cards %}
+    <div class="fixed-height-card {{ cards_col }} hoverable">
+      <div class="index-card">
+        <a href={{ card.permalink | relative_url }}>
+          <i class="material-icons medium deep-orange-text">{{ card.icon }}</i>
+        </a>
+        <p class="index-card-title">{{ card.title }}</p>
+        <p class="index-card-desc flow-text">
+          {{ card.description }}
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="{{ "/assets/img/home/parallax-2.jpg" | relative_url }}">
+  </div>
+</div>

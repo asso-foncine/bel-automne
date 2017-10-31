@@ -1,0 +1,172 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Imports
+@import "materialize";
+
+$icon_color: #ef6c00;
+
+.debug {
+  display: none
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+//MENU
+
+.menu-icon {
+    
+}
+
+.item-icon {
+    color: $icon_color !important;
+}
+
+.nav-path-main {
+  font-weight: 500 !important;
+  font-size: 1.7rem;
+}
+
+.nav-path {
+  font-weight: 400 !important;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  padding: 0.8rem;
+  font-weight: 400 !important;
+  font-size: 1.3rem;
+}
+
+.nav-side-item {
+
+}
+
+.nav-dropdown-content {
+    @extend .dropdown-content;
+    min-width: 13rem;
+}
+.nav-dropdown-head {
+    border-bottom-width: 1px;
+    border-bottom-color: $primary-color-light;
+    border-bottom-style: solid;
+}
+
+.home-title {
+    @extend .blue-grey-text;
+    font-weight: 500 !important;
+    font-style: italic;
+}
+
+.home-card {
+  
+}
+
+.parallax-container {
+  height: 600px;
+}
+.index-title {
+  @extend .center, .blue-text;
+  font-size: 3.0rem;
+}
+.index-card {
+  @extend .center;
+  margin-top: 20px;
+}
+.index-card-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 0
+}
+.navigation {
+  //@extend .blue-grey, .darken-3;  
+}
+.page-footer {
+  //@extend .blue-grey, .darken-3;  
+}
+//Media gallery
+.media-card-title {
+  //@extend .blue-grey, .darken-3, .white-text; 
+}
+.main-menu {
+  padding: 0 2rem 0 2rem
+}
+.media-nav {
+  //@extend .blue-grey, .darken-3, .white-text; 
+  padding-left: 2rem
+}
+.media-header {
+  //@extend .blue-grey, .darken-3, .white-text; 
+}
+.media-title {
+  margin: .82rem 0 .656rem 0
+}
+
+.video-gallery-thumb{
+  width: 11rem;
+}
+.image-galery.thumb {
+  width: 11rem;
+}
+.card-footer {
+  height: 4rem;
+  max-height: 4rem;
+}
+
+.table-of-contents a.active {
+  border-left-width: 5px;
+}
+.table-of-contents a {
+  font-size: 1.3rem;
+}
+.md-content {
+    color: #494949
+}
+.md-content p {
+    font-size: 1.2rem !important;
+}
+.md-content h1 {
+    font-size: 2.5rem !important;
+}
+.md-content h2 {
+    font-size: 2.1rem !important;
+}
+.md-content h3 {
+    font-size: 1.7rem !important;
+}
+.flow-text {
+  font-size: 1.45rem;
+}
+
+.post-card {
+  padding: 1.2rem !important;  
+}
+
+.post-title {
+  font-weight: 400 !important;
+  color: #292727
+}
+
+.post-date {
+    font-size: 1.3rem !important;
+  @extend .grey-text;  
+}
+
+.post-intro {
+  @extend .flow-text;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.post-link {
+  padding-bottom: 0rem !important;
+}

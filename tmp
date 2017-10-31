@@ -1,0 +1,31 @@
+    <!--
+    {% for sub_item in item.subcategories %}
+    <li><a href="{{ sub_item.subhref }}">{{ sub_item.subtitle }}</a></li>
+    {% endfor %}
+    -->
+
+<div class="section blue-grey lighten-5">
+  <div class="row container">
+    <!--/div class="col s12">
+      
+      <div class="card blue-grey darken-1">
+          <span class="card-title">{{ page.title }}</span>
+          <p class="grey-text text-darken-3 lighten-3">{{ page.subTitle }}</p>
+      </div>
+    </div-->
+    
+    {% for card in cards %}
+    <!--div class="{{ "col s" | append: card_col}}">
+        <div class="index-card">
+          <a href="{{ card.href | relative_url }}">
+            <i class="material-icons medium indigo-text">{{ card.icon }}</i>
+          </a>
+          <p class="index-card-title">{{ card.title }}</p>
+          <p class="index-card-desc">
+              {{ card.desc }}
+          </p>
+        </div>
+    </div-->
+    {% endfor %}
+  </div>
+</div>
