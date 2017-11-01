@@ -191,12 +191,25 @@ class Sample
         text.annotate(sample, 0,0,0,0, msg) {
             self.fill = 'white'
         }
-        sample.write(out)
+        
+        sample.write(out) {
+            self.quality = 75
+            self.compression = JPEG2000Compression
+        }
     end
 
     def genHomeImages()
-        genImage(1280, 800, 'Image présentation 1', 'img/home/parallax-1.jpg')
-        genImage(1280, 800, 'Image présentation 2', 'img/home/parallax-2.jpg')
+        genImage(1200, 1000, 'Image présentation 1', 'img/home/parallax-1-1200.jpg')
+        genImage(1200, 1000, 'Image présentation 2', 'img/home/parallax-2-1200.jpg')
+        genImage(800, 640, 'Image présentation 1', 'img/home/parallax-1-800.jpg')
+        genImage(800, 640, 'Image présentation 2', 'img/home/parallax-2-800.jpg')
+        genImage(600, 540, 'Image présentation 1', 'img/home/parallax-1-600.jpg')
+        genImage(600, 540, 'Image présentation 2', 'img/home/parallax-2-600.jpg')
+        genImage(400, 360, 'Image présentation 1', 'img/home/parallax-1-400.jpg')
+        genImage(400, 360, 'Image présentation 2', 'img/home/parallax-2-400.jpg')
+
+        genImage(250, 300, 'Image carte', 'img/home/card.jpg')
+        
         genImage(250, 300, 'Image carte', 'img/home/card.jpg')
     end
 
@@ -204,8 +217,8 @@ end
 
 sample = Sample.new
 
-##sample.genHomeImages()
+sample.genHomeImages()
 ##sample.genPosts(22)
 ##sample.genTasks
 ##sample.genStory
-sample.gentAlbums()
+#sample.gentAlbums()

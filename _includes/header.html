@@ -33,7 +33,7 @@
                         menu
                     </i>
                 </a>
-                <a class="brand-logo" href={{ pages[0].permalink | relative_url }}>
+                <a class="brand-logo" href={{ pages[0].url | relative_url }}>
                     <i class="material-icons menu-icon medium left">
                         {{ icon }}
                     </i>
@@ -42,7 +42,7 @@
             </div>
 
             <div class="nav-wrapper main-menu hide-on-small-only">
-                <a class="breadcrumb nav-path-main" href={{ pages[0].permalink | relative_url }}>
+                <a class="breadcrumb nav-path-main" href={{ pages[0].url | relative_url }}>
                     <i class="material-icons menu-icon left">
                         {{ icon }}
                     </i>
@@ -60,7 +60,7 @@
                 <ul class="right hide-on-med-and-down">
                     {% for link in links %}
                     <li>
-                        <a href={{ link.permalink | relative_url }}>{{ link.title }}</a>
+                        <a href={{ link.url | relative_url }}>{{ link.title }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -78,7 +78,7 @@
     </div>
     <ul class="side-nav" id="side-nav-menu">
         <li>
-            <a class="nav-dropdown-item nav-dropdown-head" href={{ pages[0].permalink | relative_url }}>
+            <a class="nav-dropdown-item nav-dropdown-head" href={{ pages[0].url | relative_url }}>
                 <i class="material-icons small item-icon">
                     {{ pages[0].icon }}
                 </i>
@@ -87,7 +87,7 @@
         </li>      
         {% for link in links %}
         <li>
-            <a class="nav-dropdown-item" href={{ link.permalink | relative_url }}>
+            <a class="nav-dropdown-item" href={{ link.url | relative_url }}>
                 <i class="material-icons small item-icon">
                     {{ link.icon }}
                 </i>
@@ -98,7 +98,7 @@
     </ul>
     <ul class="nav-dropdown-content" id="nav-dropdown">
         <li>
-            <a class="nav-dropdown-item nav-dropdown-head" href={{ pages[0].permalink | relative_url }}>
+            <a class="nav-dropdown-item nav-dropdown-head" href={{ pages[0].url | relative_url }}>
                 <i class="material-icons small item-icon">
                     {{ pages[0].icon }}
                 </i>
@@ -107,7 +107,7 @@
         </li>     
         {% for link in links %}
         <li>
-            <a class="nav-dropdown-item" href={{ link.permalink | relative_url }}>
+            <a class="nav-dropdown-item" href={{ link.url | relative_url }}>
                 <i class="material-icons small item-icon">
                     {{ link.icon }}
                 </i>

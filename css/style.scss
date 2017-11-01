@@ -60,6 +60,31 @@ main {
     border-bottom-style: solid;
 }
 
+.parallax-container {
+  @media #{$small-and-down} {
+    height: 200px;
+  }
+  @media #{$medium-and-up} {
+    // styles for medium screens and larger
+     height: 400px;
+  }
+  @media #{$large-and-up} {
+    // styles for large screens and up
+    height: 500px;
+  }
+  @media #{$extra-large-and-up} {
+    // styles for extra large screens and up
+    height: 600px;
+  }
+  
+}
+
+.home-card-image {
+  @media #{$small-and-down} {
+    display: none
+  }
+}
+
 .home-title {
     @extend .blue-grey-text;
     font-weight: 500 !important;
@@ -70,9 +95,7 @@ main {
   
 }
 
-.parallax-container {
-  height: 600px;
-}
+
 .index-title {
   @extend .center, .blue-text;
   font-size: 3.0rem;

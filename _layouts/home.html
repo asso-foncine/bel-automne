@@ -25,18 +25,23 @@ layout: default
 {% endif %}
 <div class="parallax-container">
   <div class="parallax">
-    <img src="{{ "/assets/img/home/parallax-1.jpg" | relative_url }}">
+    <img srcset="/assets/img/home/parallax-1-1200.jpg 1200w,
+    /assets/img/home/parallax-1-800.jpg 800w,
+    /assets/img/home/parallax-1-600.jpg 600w,
+    /assets/img/home/parallax-1-400.jpg 400w,
+    " />
+    <!--img srcset="" src="{{ "/assets/img/home/parallax-1-1200.jpg" | relative_url }}"-->
   </div>
 </div>
 
-<div class="section blue-grey lighten-5">
+<div class="section home-section">
   <div class="row container">
     <div class="col s12">
       <h2 class="header center-align home-title">{{ page.page-title }}</h2>
     </div>
     <div class="col s12">
       <div class="card horizontal">
-        <div class="card-image valign-wrapper">
+        <div class="card-image valign-wrapper home-card-image">
           <img src="{{ "/assets/img/home/card.jpg" | relative_url }}">
         </div>
         <div class="card-stacked">
@@ -57,7 +62,7 @@ layout: default
     <div class="fixed-height-card {{ cards_col }} hoverable">
       <div class="index-card">
         <a href={{ card.url | relative_url }}>
-          <i class="material-icons medium deep-orange-text">{{ card.icon }}</i>
+          <i class="material-icons medium home-icon ">{{ card.icon }}</i>
         </a>
         <p class="index-card-title">{{ card.title }}</p>
         <p class="index-card-desc flow-text">
@@ -71,6 +76,11 @@ layout: default
 
 <div class="parallax-container">
   <div class="parallax">
-    <img src="{{ "/assets/img/home/parallax-2.jpg" | relative_url }}">
+      <img srcset="/assets/img/home/parallax-2-1200.jpg 1200w,
+      /assets/img/home/parallax-2-800.jpg 800w,
+      /assets/img/home/parallax-2-600.jpg 600w,
+      /assets/img/home/parallax-2-400.jpg 400w,
+      " />
+    <!--img src="{{ "/assets/img/home/parallax-2-1200.jpg" | relative_url }}"-->
   </div>
 </div>
