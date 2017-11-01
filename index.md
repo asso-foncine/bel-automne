@@ -12,7 +12,7 @@ contact-message: Message contact
 permalink: /
 ---
 
-# Bienvenue sur le site
+## Bienvenue sur le site
 
 Ici le texte de decription du site
 

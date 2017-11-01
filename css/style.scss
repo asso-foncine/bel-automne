@@ -21,13 +21,19 @@ main {
   flex: 1 0 auto;
 }
 //MENU
-
 .menu-icon {
     
 }
-
-.item-icon {
+/*
+Home page
+*/
+.home-item i {
     color: $icon_color !important;
+}
+
+
+.card-icon {
+  color: $icon_color !important;
 }
 
 .nav-path-main {
@@ -59,7 +65,7 @@ main {
     border-bottom-color: $primary-color-light;
     border-bottom-style: solid;
 }
-
+// HOME
 .parallax-container {
   @media #{$small-and-down} {
     height: 200px;
@@ -80,10 +86,12 @@ main {
 }
 
 .home-card-image {
-  @media #{$small-and-down} {
+  @media #{$medium-and-down} {
     display: none
   }
 }
+
+
 
 .home-title {
     @extend .blue-grey-text;
@@ -132,6 +140,12 @@ main {
 }
 .media-title {
   margin: .82rem 0 .656rem 0
+}
+
+.video-card-image {
+  @media #{$medium-and-down} {
+    display: none
+  }
 }
 
 .video-gallery-thumb{
@@ -192,4 +206,32 @@ main {
 
 .post-link {
   padding-bottom: 0rem !important;
+}
+
+.paginator-fixed {
+  z-index: 99 !important;
+}
+.paginator-mask {
+  min-height: 6rem !important;
+  height: 6rem !important;
+}
+.paginator-card {
+  width: 90%;
+  margin-left: 0.5rem;
+
+}
+.paginator-card-content {
+  padding: 0.5rem !important;
+}
+
+
+@media #{$medium-and-up} {
+  .paginator-card {
+    width: 85%;
+  }
+}
+@media #{$large-and-up} {
+  .paginator-card {
+    width: 70%;
+  }
 }

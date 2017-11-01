@@ -26,6 +26,7 @@ layout: default
 <div class="parallax-container">
   <div class="parallax">
     <img srcset="{{ "/assets/img/home/parallax-1-1200.jpg" | relative_url }} 1200w,
+                 {{ "/assets/img/home/parallax-1-1000.jpg" | relative_url }} 1000w,
                  {{ "/assets/img/home/parallax-1-800.jpg" | relative_url }} 800w,
                  {{ "/assets/img/home/parallax-1-600.jpg" | relative_url }} 600w,
                  {{ "/assets/img/home/parallax-1-400.jpg" | relative_url }} 400w"/>
@@ -58,10 +59,10 @@ layout: default
     </div>
     <div class="divider"></div>
     {% for card in cards %}
-    <div class="fixed-height-card {{ cards_col }} hoverable">
+    <div class="fixed-height-card {{ cards_col }} hoverable home-item">
       <div class="index-card">
         <a href={{ card.url | relative_url }}>
-          <i class="material-icons medium home-icon ">{{ card.icon }}</i>
+          <i class="material-icons medium icon">{{ card.icon }}</i>
         </a>
         <p class="index-card-title">{{ card.title }}</p>
         <p class="index-card-desc flow-text">
@@ -76,6 +77,7 @@ layout: default
 <div class="parallax-container">
   <div class="parallax">
       <img srcset="{{ "/assets/img/home/parallax-2-1200.jpg" | relative_url }} 1200w,
+      {{ "/assets/img/home/parallax-2-1000.jpg" | relative_url }} 1000w,
       {{ "/assets/img/home/parallax-2-800.jpg" | relative_url }} 800w,
       {{ "/assets/img/home/parallax-2-600.jpg" | relative_url }} 600w,
       {{ "/assets/img/home/parallax-2-400.jpg" | relative_url }} 400w"/>

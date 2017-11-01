@@ -201,6 +201,8 @@ class Sample
     def genHomeImages()
         genImage(1200, 1000, 'Image présentation 1', 'img/home/parallax-1-1200.jpg')
         genImage(1200, 1000, 'Image présentation 2', 'img/home/parallax-2-1200.jpg')
+        genImage(1000, 920, 'Image présentation 1', 'img/home/parallax-1-1000.jpg')
+        genImage(1000, 920, 'Image présentation 2', 'img/home/parallax-2-1000.jpg')
         genImage(800, 640, 'Image présentation 1', 'img/home/parallax-1-800.jpg')
         genImage(800, 640, 'Image présentation 2', 'img/home/parallax-2-800.jpg')
         genImage(600, 540, 'Image présentation 1', 'img/home/parallax-1-600.jpg')
@@ -217,8 +219,8 @@ end
 
 sample = Sample.new
 
-#sample.genHomeImages()
-sample.genPosts(22)
-sample.genTasks
-sample.genStory
+sample.genHomeImages()
+#sample.genPosts(22)
+#sample.genTasks
+#sample.genStory
 #sample.gentAlbums()

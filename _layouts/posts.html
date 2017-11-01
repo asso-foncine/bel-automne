@@ -2,20 +2,62 @@
 layout: default
 ---
 
-<div class="container">
+<div class="container">  
+        {% if paginator.total_pages > 1 %}
 
-    {% if content != "" %}
-    <!--div class="row">
-        <div class="col s12">
-            <div class="card">
-                <div class="card-content md-content">
-                    {{ content }} 
+        {% endif %}  
+    <div class="row">
+        {% if paginator.total_pages > 1 %}
+        <div class="col s12 paginator-mask">
+        </div>
+        <div class="col s12 paginator-fixed">
+            <div class="card hoverable paginator-card"> <!--paginator-fixed-->
+                <div class="card-content paginator-card-content">
+                        <ul class="pagination center">
+                                {% if paginator.previous_page %}
+                                    {% assign prev_style = "waves-effect" %}
+                                {% else %}
+                                    {% assign prev_style = "disabled" %}
+                                {% endif %}
+                                {% if paginator.next_page %}
+                                    {% assign next_style = "waves-effect" %}
+                                {% else %}
+                                    {% assign next_style = "disabled"  %}
+                                {% endif %}
+                                <li class={{ prev_style }}>
+                                    <a href={{ paginator.previous_page_path | relative_url }}>
+                                        <i class="material-icons">chevron_left</i>
+                                    </a>
+                                </li>
+                                {% for idx in (1..paginator.total_pages) %}
+                                    {% assign url = "/posts/page-" | append: idx %}
+                                    {% if idx == paginator.page %}
+                                        {% assign class = "active" %}
+                                    {% else %}
+                                        {% assign class = "waves-effect" %}
+                                    {% endif %}
+                                    {% if idx == 1 %}
+                                        {% assign url = "/posts/" %}
+                                    {% endif %}
+                                
+                                <li class={{ class }}>
+                                    <a href={{ url | relative_url }}>
+                                        {{ idx }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                                <li class={{ next_style }}>
+                                    <a href={{ paginator.next_page_path | relative_url }}>
+                                        <i class="material-icons">chevron_right</i>
+                                    </a>
+                                </li>
+                            </ul>
                 </div>
+                
             </div>
         </div>
-    </div-->
-    {% endif %}
-    <div class="row">
+        
+        {% endif %} 
         {% for post in paginator.posts %}
         <div class="col s12">
             <div class="card hoverable ">
@@ -38,51 +80,7 @@ layout: default
             </div>
         </div>
         {% endfor %}
-        {% if paginator.total_pages > 1 %}
-        <div class="col s12 m8 offset-m2">
-            <ul class="pagination center">
-                {% if paginator.previous_page %}
-                    {% assign prev_style = "waves-effect" %}
-                {% else %}
-                    {% assign prev_style = "disabled" %}
-                {% endif %}
-                {% if paginator.next_page %}
-                    {% assign next_style = "waves-effect" %}
-                {% else %}
-                    {% assign next_style = "disabled"  %}
-                {% endif %}
-                <li class={{ prev_style }}>
-                    <a href={{ paginator.previous_page_path | relative_url }}>
-                        <i class="material-icons">chevron_left</i>
-                    </a>
-                </li>
-                {% for idx in (1..paginator.total_pages) %}
-                    {% assign url = "/posts/page-" | append: idx %}
-                    {% if idx == paginator.page %}
-                        {% assign class = "active" %}
-                    {% else %}
-                        {% assign class = "waves-effect" %}
-                    {% endif %}
-                    {% if idx == 1 %}
-                        {% assign url = "/posts/" %}
-                    {% endif %}
-                
-                <li class={{ class }}>
-                    <a href={{ url | relative_url }}>
-                        {{ idx }}
-                    </a>
-                </li>
-                {% endfor %}
-                <li class={{ next_style }}>
-                    <a href={{ paginator.next_page_path | relative_url }}>
-                        <i class="material-icons">chevron_right</i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        {% endif %}
     </div>
-
 </div>
     
     
