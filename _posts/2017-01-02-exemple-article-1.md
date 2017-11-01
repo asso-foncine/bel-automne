@@ -7,7 +7,7 @@ intro: Introduction à l'article exemple 1
 ---
 
 # Lorem ipsum dolor sit
-![](/assets/img/posts/sample/sample.jpg)
+![](/jekyll-site/assets/img/posts/sample/sample.jpg)
 
 >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt
 

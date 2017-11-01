@@ -54,7 +54,7 @@ class Sample
                 file << "---" + "\n"
                 file << "\n"
                 file << "# " + LoremIpsum.lorem_ipsum(w: 4) + "\n"
-                file << "![](/assets/img/posts/sample/sample.jpg)\n\n"
+                file << "![](/jekyll-site/assets/img/posts/sample/sample.jpg)\n\n"
                 file << ">" + LoremIpsum.lorem_ipsum(w: 40) + "\n"
                 file << "\n"
                 file << "\n"
@@ -91,9 +91,9 @@ class Sample
             file << "---" + "\n\n"
             file << "# " + LoremIpsum.lorem_ipsum(w: 4) + "\n"
             
-            file << "![](/assets/" + taskImg1 + ")" + "\n\n"
+            file << "![](/jekyll-site/assets/" + taskImg1 + ")" + "\n\n"
             file << LoremIpsum.lorem_ipsum(w: 100) + "\n\n"
-            file << "![](/assets/" + taskImg2 + ")" + "\n\n"
+            file << "![](/jekyll-site/assets/" + taskImg2 + ")" + "\n\n"
             file << ">" + LoremIpsum.lorem_ipsum(w: 30) + "\n"
             file << "\n"
             genImage(550, 450, taskName, taskThumb)
@@ -120,7 +120,7 @@ class Sample
             file << "\n"
             file << "# " + LoremIpsum.lorem_ipsum(w: 4) + "\n\n"
             
-            file << "![](/assets/" + storyImg + ")" + "\n\n"
+            file << "![](/jekyll-site/assets/" + storyImg + ")" + "\n\n"
             file << LoremIpsum.lorem_ipsum(w: 500) + "\n"
             genImage(640, 480, 'section-image-'+ idx.to_s, storyImg)
             idx += 1
@@ -217,8 +217,8 @@ end
 
 sample = Sample.new
 
-sample.genHomeImages()
-##sample.genPosts(22)
-##sample.genTasks
-##sample.genStory
+#sample.genHomeImages()
+sample.genPosts(22)
+sample.genTasks
+sample.genStory
 #sample.gentAlbums()
