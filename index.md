@@ -1,20 +1,19 @@
 ---
 layout: home
 index: 1
-title: Site
-page-title: Titre de la page
+title: Bel Automne
+page-title: ASSOCIATION "BEL AUTOMNE"
 nav-link: true
 home-link: false
-description: | 
-    Description courte
-icon: home
-contact-message: Message contact
+description: Description courte
+icon: explore
+contact-message: Contacter la présidente
 permalink: /
 ---
 
-## Bienvenue sur le site
 
-Ici le texte de decription du site
+### Bienvenue au Bel Automne
 
-Dans le fichier /index.md après les balises
-
+* Rencontres amicales hebdomadaires
+* Randonn&eacute;es p&eacute;destres ou cyclistes
+* Repas conviviaux
