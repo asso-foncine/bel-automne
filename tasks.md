@@ -8,4 +8,5 @@ index: 20
 title: ACTIVITES
 description: Nos animations
 icon: people
+link-text: VOIR
 ---
