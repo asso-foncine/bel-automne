@@ -1,10 +1,10 @@
 ---
 layout: story
 index: 30
-title: Narration
-nav-link: false
-home-link: false
-description: Contenu publications de niveau 3
+title: INFOS
+nav-link: true
+home-link: true
+description: Les informations utiles
 icon: info_outline
 permalink: /story/
 ---

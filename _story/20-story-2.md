@@ -1,13 +1,44 @@
 ---
-title: Section 2
+title: Calendrier
 ---
 
-# Lorem ipsum dolor sit
+# Calendrier
 
-![](/jekyll-site/assets/img/story/20-story-2.jpg)
+## Les activités hebdomadaires
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin metus eget eros.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In posuere felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit. Maecenas at justo id velit placerat molestie. Donec dictum lectus non odio. Cras a ante vitae enim iaculis aliquam. Mauris nunc quam, venenatis nec, euismod sit amet, egestas placerat, est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras id elit. Integer quis urna. Ut ante enim, dapibus malesuada, fringilla eu, condimentum quis, tellus. Aenean porttitor eros vel dolor. Donec convallis pede venenatis nibh. Duis quam. Nam eget lacus. Aliquam erat volutpat. Quisque dignissim congue leo.
-Mauris vel lacus vitae felis vestibulum volutpat. Etiam est nunc, venenatis in, tristique eu, imperdiet ac, nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In iaculis facilisis massa. Etiam eu urna. Sed porta. Suspendisse quam leo, molestie sed, luctus quis, feugiat in, pede. Fusce tellus. Sed metus augue, convallis et, vehicula ut, pulvinar eu, ante. Integer orci tellus, tristique vitae, consequat nec, porta vel, lectus. Nulla sit amet diam. Duis non nunc. Nulla rhoncus dictum metus. Curabitur tristique mi condimentum orci. Phasellus pellentesque aliquam enim. Proin dui lectus, cursus eu, mattis laoreet, viverra sit amet, quam. Curabitur vel dolor ultrices ipsum dictum tristique. Praesent vitae lacus. Ut velit enim, vestibulum non, fermentum nec, hendrerit quis, leo. Pellentesque rutrum malesuada neque.
-Nunc tempus felis vitae urna. Vivamus porttitor, neque at volutpat rutrum, purus nisi eleifend libero, a tempus libero lectus feugiat felis. Morbi diam mauris, viverra in, gravida eu, mattis in, ante. Morbi eget arcu. Morbi porta, libero id ullamcorper nonummy, nibh ligula pulvinar metus, eget consectetuer augue nisi quis lacus. Ut ac mi quis lacus mollis aliquam. Curabitur iaculis tempus eros. Curabitur vel mi sit amet magna malesuada ultrices. Ut nisi erat, fermentum vel, congue id, euismod in, elit. Fusce ultricies, orci ac feugiat suscipit, leo massa sodales velit, et scelerisque mi tortor at ipsum. Proin orci odio, commodo ac, gravida non, tristique vel, tellus. Pellentesque nibh libero, ultricies eu, sagittis non, mollis sed, justo. Praesent metus ipsum, pulvinar pulvinar, porta id, fringilla at, est.
-Phasellus felis dolor, scelerisque a, tempus eget, lobortis id, libero. Donec scelerisque leo ac risus. Praesent sit amet est. In dictum, dolor eu dictum porttitor, enim felis viverra mi, eget luctus massa purus quis odio. Etiam nulla massa, pharetra facilisis, volutpat in,
+| Jour       | Activité |     Heure    |   Lieu     |
+| -----------| ---------|  -------------| ---------      |
+| Lundi      |         |         |
+| Mardi      |         |        |
+| Mercredi   |          |          |
+| Jeudi      |  Jeux                | 14:00-17:00 |  Salle du châlet    |
+|            |  Randonée pédestre  | 13:30~17:00 |  Rdv sur la place    |
+| Vendredi   |          |          |
+| Samedi     |          |          |
+| Dimanche   |          |          |
+
+---
+## Les évènements 2017
+
+| Mois      |  Date        |  Evènement         |   Lieu          |
+| ----------| -------------| ------------------ | --------------- |
+| Octobre   |          |          |
+| Novembre  |          |          |
+| Décembre  | Samedi 2 - journée        |  Marché de Noel  | Parking municipal |
+
+## Les évènements 2018
+
+| Mois      |  Date        |  Evènement         |   Lieu          |
+| ----------| -------------| ------------------ | --------------- |
+| Janvier   | Dimanche 14 - midi  | Repas des aînés    | Salle du châlet |
+| Fevrier   | Dimanche 4 - midi  | Choucroute         | Salle du châlet |
+| Mars      | 
+| Avril     | Samedi 7 - 10h00   | Assemblée générale |  Salle du châlet    |
+|  Mai      |
+| Juin      |         
+| Juillet   | Dimanche 8 - midi  | Repas champêtre  | Champ de Mars |
+| Aôut      | Dimanche 26 - journée  | Randonée des Chamois | Champ de Mars |
+| Septembre |          |          |
+| Octobre   |          |          |
+| Novembre  |          |          |
+| Décembre  | Samedi 1 - journée        |  Marché de Noel  | Parking municipal |

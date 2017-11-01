@@ -1,19 +1,16 @@
 ---
 layout: task
-title: Randonnées
-description: >-
-  Nous organisons des randonnées pédestres en principe le jeudi après midi aux
-  alentours du village ainsi que des randonnées à la journée avec covoiturage et
-  repas tiré du sac la journée selon météo.
+title: Jeux 
+description: | 
+   Jeux ludiques chaque jeudi après midi à partir de 14h00 avec boisson offerte à la salle du châlet.
 ---
 
-
 # Lorem ipsum dolor sit
-
-![](/jekyll-site/assets/img/tasks/20-activity-2/1.jpg)
+![](/jekyll-site/assets/img/tasks/10-activity-1/1.jpg)
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. Vivamus sollicitudin
 
-![](/jekyll-site/assets/img/tasks/20-activity-2/2.jpg)
+![](/jekyll-site/assets/img/tasks/10-activity-1/2.jpg)
 
-> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante,
+>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante,
+

@@ -1,5 +1,5 @@
 ---
-title: Section 3
+title: Sortie vélo
 ---
 
 # Lorem ipsum dolor sit

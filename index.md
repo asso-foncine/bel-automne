@@ -1,7 +1,7 @@
 ---
 layout: home
 index: 1
-title: Bel Automne
+title: BEL AUTOMNE
 page-title: ASSOCIATION "BEL AUTOMNE"
 nav-link: true
 home-link: false
