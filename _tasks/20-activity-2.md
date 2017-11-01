@@ -1,6 +1,6 @@
 ---
 layout: task
-title: Randonnées pédestres
+title: Randonnées
 description: >-
   Nous organisons des randonnées pédestres en principe le jeudi après midi aux
   alentours du village ainsi que des randonnées à la journée avec covoiturage et
