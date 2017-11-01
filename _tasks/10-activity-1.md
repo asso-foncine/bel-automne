@@ -1,8 +1,8 @@
 ---
 layout: task
-title: Activité 1
+title: Jeux 
 description: | 
-   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt
+   Jeux ludiques chaque jeudi après midi à partir de 14 h 00 avec thé ou boisson offert à la grande salle du châlet.
 ---
 
 # Lorem ipsum dolor sit
