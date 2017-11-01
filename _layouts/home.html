@@ -25,11 +25,10 @@ layout: default
 {% endif %}
 <div class="parallax-container">
   <div class="parallax">
-    <img srcset="/assets/img/home/parallax-1-1200.jpg 1200w,
-    /assets/img/home/parallax-1-800.jpg 800w,
-    /assets/img/home/parallax-1-600.jpg 600w,
-    /assets/img/home/parallax-1-400.jpg 400w,
-    " />
+    <img srcset="{{ "/assets/img/home/parallax-1-1200.jpg" | relative_url }} 1200w,
+                 {{ "/assets/img/home/parallax-1-800.jpg" | relative_url }} 800w,
+                 {{ "/assets/img/home/parallax-1-600.jpg" | relative_url }} 600w,
+                 {{ "/assets/img/home/parallax-1-400.jpg" | relative_url }} 400w"/>
     <!--img srcset="" src="{{ "/assets/img/home/parallax-1-1200.jpg" | relative_url }}"-->
   </div>
 </div>
@@ -42,7 +41,7 @@ layout: default
     <div class="col s12">
       <div class="card horizontal">
         <div class="card-image valign-wrapper home-card-image">
-          <img src="{{ "/assets/img/home/card.jpg" | relative_url }}">
+          <img src={{ "/assets/img/home/card.jpg" | relative_url }}>
         </div>
         <div class="card-stacked">
           <div class="card-content md-content">
@@ -76,11 +75,9 @@ layout: default
 
 <div class="parallax-container">
   <div class="parallax">
-      <img srcset="/assets/img/home/parallax-2-1200.jpg 1200w,
-      /assets/img/home/parallax-2-800.jpg 800w,
-      /assets/img/home/parallax-2-600.jpg 600w,
-      /assets/img/home/parallax-2-400.jpg 400w,
-      " />
-    <!--img src="{{ "/assets/img/home/parallax-2-1200.jpg" | relative_url }}"-->
+      <img srcset="{{ "/assets/img/home/parallax-2-1200.jpg" | relative_url }} 1200w,
+      {{ "/assets/img/home/parallax-2-800.jpg" | relative_url }} 800w,
+      {{ "/assets/img/home/parallax-2-600.jpg" | relative_url }} 600w,
+      {{ "/assets/img/home/parallax-2-400.jpg" | relative_url }} 400w"/>
   </div>
 </div>
